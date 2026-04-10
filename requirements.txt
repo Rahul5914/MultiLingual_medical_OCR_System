@@ -1,0 +1,45 @@
+# ============================================================
+# Multilingual Medical OCR System — Requirements
+# Python 3.9+  |  GPU optional (CUDA 11.8+)
+# ============================================================
+
+# ── Core ML / AI ─────────────────────────────────────────────
+torch>=2.1.0
+torchvision>=0.16.0
+transformers>=4.38.0
+accelerate>=0.27.0
+sentencepiece>=0.1.99
+tokenizers>=0.15.0
+
+# ── OCR ──────────────────────────────────────────────────────
+easyocr>=1.7.1
+pytesseract>=0.3.10
+# Note: Tesseract binary must also be installed:
+#   Ubuntu/Debian: sudo apt-get install -y tesseract-ocr tesseract-ocr-hin tesseract-ocr-ben
+#   macOS:         brew install tesseract
+#   Windows:       https://github.com/UB-Mannheim/tesseract/wiki
+
+# ── Image Processing ─────────────────────────────────────────
+opencv-python-headless>=4.9.0
+Pillow>=10.2.0
+numpy>=1.26.0
+
+# ── Translation & Language Detection ─────────────────────────
+deep-translator>=1.11.4
+langdetect>=1.0.9
+
+# ── PDF Generation ───────────────────────────────────────────
+reportlab>=4.1.0
+
+# ── Visualisation / Notebook ─────────────────────────────────
+matplotlib>=3.8.0
+ipywidgets>=8.1.0
+ipython>=8.12.0
+
+# ── Streamlit App ─────────────────────────────────────────────
+streamlit>=1.32.0
+
+# ── Utilities ────────────────────────────────────────────────
+tqdm>=4.66.0
+requests>=2.31.0
+scipy>=1.12.0
